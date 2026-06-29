@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Flashcards - Volkswagen Saveiro</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.flashcard{
+    width:320px;
+    height:430px;
+    perspective:1000px;
+}
+
+.card{
+    width:100%;
+    height:100%;
+    position:relative;
+    transform-style:preserve-3d;
+    transition:0.7s;
+    cursor:pointer;
+}
+
+.flashcard:hover .card{
+    transform:rotateY(180deg);
+}
+
+.face{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    background:white;
+}
+
+.front img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.front h3{
+    padding:15px;
+    text-align:center;
+}
+
+.back{
+    transform:rotateY(180deg);
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.back h2{
+    color:green;
+}
+
+.back p{
+    line-height:1.5;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Flashcard 1 -->
+<div class="flashcard">
+<div class="card">
+
+<div class="face front">
+<img src="imagens/saveiro1.jpg">
+<h3>A Saveiro pertence à Volkswagen?</h3>
+</div>
+
+<div class="face back">
+<h2>Resposta: Verdadeiro</h2>
+<p>A Saveiro é uma picape compacta produzida pela Volkswagen desde a década de 1980 e faz parte da família Gol.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Flashcard 2 -->
+<div class="flashcard">
+<div class="card">
+
+<div class="face front">
+<img src="imagens/saveiro2.jpg">
+<h3>A Saveiro foi desenvolvida exclusivamente para transportar passageiros?</h3>
+</div>
+
+<div class="face back">
+<h2>Resposta: Falso</h2>
+<p>A principal finalidade da Saveiro é o transporte de cargas leves, embora também acomode passageiros na cabine.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Flashcard 3 -->
+<div class="flashcard">
+<div class="card">
+
+<div class="face front">
+<img src="imagens/saveiro3.jpg">
+<h3>A Saveiro possui versões com cabine dupla?</h3>
+</div>
+
+<div class="face back">
+<h2>Resposta: Verdadeiro</h2>
+<p>Além da cabine simples e estendida, existem versões cabine dupla que oferecem mais espaço para passageiros.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Flashcard 4 -->
+<div class="flashcard">
+<div class="card">
+
+<div class="face front">
+<img src="imagens/saveiro4.jpg">
+<h3>A Saveiro sempre utilizou motor traseiro?</h3>
+</div>
+
+<div class="face back">
+<h2>Resposta: Falso</h2>
+<p>A Saveiro utiliza motores dianteiros, acompanhando a plataforma dos veículos compactos da Volkswagen.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Flashcard 5 -->
+<div class="flashcard">
+<div class="card">
+
+<div class="face front">
+<img src="imagens/saveiro5.jpg">
+<h3>A Saveiro é bastante utilizada para trabalho e transporte de pequenas cargas?</h3>
+</div>
+
+<div class="face back">
+<h2>Resposta: Verdadeiro</h2>
+<p>Graças à caçamba e ao baixo custo de manutenção, a Saveiro é muito utilizada por profissionais e pequenas empresas.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Flashcard 6 -->
+<div class="flashcard">
+<div class="card">
+
+<div class="face front">
+<img src="imagens/saveiro6.jpg">
+<h3>Todas as versões da Saveiro possuem tração nas quatro rodas?</h3>
+</div>
+
+<div class="face back">
+<h2>Resposta: Falso</h2>
+<p>As versões comercializadas no Brasil utilizam, em geral, tração dianteira.</p>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
